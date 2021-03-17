@@ -1,1 +1,1 @@
-web: gunicorn foot_backend.wsgi --log-file -
+web: gunicorn heroku_foot.wsgi --log-file -
