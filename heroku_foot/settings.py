@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'foot_backend.urls'
+ROOT_URLCONF = 'heroku_foot.urls'
 
 TEMPLATES = [
     {
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'foot_backend.wsgi.application'
+WSGI_APPLICATION = 'heroku_foot.wsgi.application'
 
 
 # Database
