@@ -32,7 +32,7 @@ class Registr(APIView):
         serializer = reg_seria(data=request.query_params)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
-            return Response({'Greate user regist':'True'})
+            return Response({'Greate user regist':True})
         else:
            return Response({"Error":"CHECK"})
 # class Auth(APIView):
