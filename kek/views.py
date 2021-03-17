@@ -27,7 +27,8 @@ def Test(request):
 
 class Registr(APIView):
 # @api_view(['GET'])
-    def post(self,request):
+    def get(self,request):
+        # был post стал get для heroku
 
         serializer = reg_seria(data=request.query_params)
         if serializer.is_valid(raise_exception=True):
