@@ -27,7 +27,7 @@ def Test(request):
 
 class Registr(APIView):
 # @api_view(['GET'])
-    def get(self,request):
+    def post(self,request):
         # был post стал get для heroku
 
         serializer = reg_seria(data=request.query_params)
@@ -37,7 +37,7 @@ class Registr(APIView):
         else:
            return Response({"Error":"CHECK"})
 # class Auth(APIView):
-@api_view(['GET'])
+@api_view(['POST'])
 def geT(request):
 
     print(request.GET['login_user'])

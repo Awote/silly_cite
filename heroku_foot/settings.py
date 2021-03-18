@@ -29,11 +29,11 @@ SECRET_KEY = '0b)*5q@j*=lc12p7(k0)2$9^(43gq88c@c9cc4$&-&q$rki(3!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['']
 
-
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Application definition
-
+SECURE_SSL_REDIRECT = True
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
